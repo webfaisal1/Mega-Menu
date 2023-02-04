@@ -10,9 +10,12 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav className=" bg-white  w-full relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
+
         <div className=" container flex justify-between items-center relative  ">
+
           <div className="z-50 md:w-auto w-full flex justify-between items-center cursor-pointer">
-            <Link className="w-[100px] h-[30px]" to="/">
+            
+            <Link className="w-[104px] h-[36px]" to="/">
               <img src={logo} alt="logo" />
             </Link>
 
@@ -23,7 +26,7 @@ const Navbar = () => {
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
             </div>
           </div>
-          <div className="md:flex hidden  items-center gap-5 ">
+          <div className="md:flex hidden  items-center gap-8 relative right-44 ">
             <NavLinks />
             <ul className="inline-flex  space-x-5">
               <Link to="/">
@@ -57,6 +60,7 @@ const Navbar = () => {
               <h1 className="text-[#535966] font-semibold text-[14px]  ">
                 Contact
               </h1>
+
               <h1 className="text-[#535966] font-semibold text-[14px]  ">
                 Login
               </h1>

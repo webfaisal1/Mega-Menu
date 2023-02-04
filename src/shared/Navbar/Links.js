@@ -1,82 +1,98 @@
-// Services
+// image import
+import enterprise from '../../assets/images/logo-enterprise-search-32-color.svg'
+import observability from '../../assets/images/logo-observability-32-color.svg'
+import security from '../../assets/images/logo-security-32-color.svg'
+import elastic from '../../assets/images/logo-cloud-32-color.svg'
+import stack from '../../assets/images/logo-stack-32-color.svg'
+import cloud from '../../assets/images/logo-cloud-32-color (1).svg'
+
+// Link
 export const Links = [
   {
     name: "Platform",
     submenu: true,
     sublinks: [
       {
-        Head: "SEO",
-        sublink: [
-          { name: "SEO Service", link: "/seoServices" },
-          { name: "E-commerce SEO", link: "/eCommarceSeo" },
-          { name: "Local SEO", link: "/localSeo" },
-          { name: "SEO Audit Service", link: "/seoAuditService" },
-          { name: "Amazon SEO Service", link: "/amazonSeoService" },
-          { name: "Shopify SEO Service", link: "/shopifySeoService" },
-          {
-            name: "Dropshipping Optimization Service",
-            link: "/dropshippingOptimizationService",
-          },
-          { name: "Restaurant SEO", link: "/restaurantSeo" },
-          { name: "SEO for Travel Agency", link: "/seoForTravelAgency" },
-          { name: "SEO for Small Business", link: "/seoForSmallBusiness" },
-          { name: "Corporate SEO", link: "/corporateSeo" },
-        ],
+        Head: ["ELASTIC CLOUD"],
+        sublink: [{ 
+          name: "Maximize value and optimize your experience", 
+          des: "Deploy everything Elastic has to offer across any cloud, in minutes.",
+          learn: "Learn more",
+          additional: "ADDITIONAL RESOURCES",
+          pricing: "View pricing",
+          downloads: "Free trial and downloads",
+          integrations: "View all integrations",
+          link: "/seoServices" 
+        }],
       },
+
+
       {
-        Head: "Digital Marketing",
+        Head: "USE ELASTIC FOR",
         sublink: [
           {
-            name: "Digital Marketing Service",
+            img: enterprise,
+            heading: "Digital Marketing Service",
+            des: "Search and discovery experiences",
             link: "/digitalMarketingService",
           },
-          { name: "Social Media Management", link: "/socialMediaManagement" },
           {
-            name: "YouTube Marketing Service",
-            link: "/youTubeMarketingService",
-          },
-          { name: "Google Ads Management", link: "/googleAdsManagement" },
-          { name: "Ecom. PPC Ad Management", link: "/ecomPPCAdManagement" },
-          { name: "Content Writing Service", link: "/contentWritingService" },
-          { name: "Blog Writing Service", link: "/blogWritingService" },
-          {
-            name: "Product Review Writing Service",
-            link: "/productReviewWritingService",
+            img: observability,
+            heading: "Digital Marketing Service",
+            des: "Unified logs, metrics, and traces",
+            link: "/digitalMarketingService",
           },
           {
-            name: "Social Media Content Creation",
-            link: "/socialMediaContentCreation",
+            img: security,
+            heading: "Digital Marketing Service",
+            des: "SIEM, endpoint, cloud XDR",
+            link: "/digitalMarketingService",
           },
-        ],
-      },
-      {
-        Head: "Web Design & Development",
-        sublink: [
-          { name: "Dynamic Website", link: "/dynamicWebsite" },
-          { name: "E-commerce Website", link: "/eCommerceWebsite" },
           {
-            name: "Website Development Service",
-            link: "/websiteDevelopmentService",
+            img: elastic,
+            heading: "Digital Marketing Service",
+            des: "Deploy and scale in any cloud",
+            link: "/digitalMarketingService",
           },
-          { name: "Convert Figma To React", link: "/convertFigmaToReact" },
-          { name: "MERN Stack Development", link: "/mERNStackDevelopment" },
+          {
+            img: stack,
+            heading: "Digital Marketing Service",
+            des: "Elasticsearch, Kibana, and integrations",
+            link: "/digitalMarketingService",
+          },
         ],
       },
 
+
       {
-        Head: "Graphic Design ",
+        Head: "WHAT'S NEW",
         sublink: [
-          { name: "Image Post Production", link: "/imagePostProduction" },
-          { name: "Creative Design Service", link: "/creativeDesignService" },
+          {
+            heading: "Elastic 8.6 released",
+            des: "See the latest enhancements",
+            link: "/digitalMarketingService",
+          },
+          {
+            heading: "Upgrade the Elastic Stack",
+            des: "Expert tips when upgrading",
+            link: "/digitalMarketingService",
+          },
+          {
+            heading: "Documentation",
+            des: "Read latest product guides",
+            link: "/digitalMarketingService",
+          },
+          {
+            heading: "ElasticON Global 2023",
+            des: "Register now for free",
+            link: "/digitalMarketingService",
+          },
+          {
+            heading: "We're hiring",
+            des: "Join a global, distributed team",
+            link: "/digitalMarketingService",
+          },
         ],
-      },
-      {
-        Head: "Video Editing",
-        sublink: [{ name: "Video Editing", link: "/videoEditing" }],
-      },
-      {
-        Head: "Total Branding",
-        sublink: [{ name: "Total Branding", link: "/totalBranding" }],
       },
     ],
   },

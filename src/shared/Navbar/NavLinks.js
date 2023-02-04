@@ -12,16 +12,16 @@ const NavLinks = (open, setOpen) => {
           <div className="pr-4 md:pr-1 lg:pr-0 text-left md:cursor-pointer group">
             <h1
               className={` flex justify-start  space-x-2 items-center  group ${
-                open
-                  ? "text-[#222222] text-[14px] my-3 p-3"
-                  : "text-[#222222]"
+                open ? "text-[#222222] text-[14px] my-3 p-3" : "text-[#222222]"
               }`}
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
               }}
             >
-              <li className="font-medium cursor-pointer">{link.name}</li>
+              <ul>
+                <li className="font-medium cursor-pointer">{link.name}</li>
+              </ul>
               <span className="text-xl md:hidden inline">
                 <ion-icon
                   name={`${
@@ -33,33 +33,35 @@ const NavLinks = (open, setOpen) => {
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
+
+            {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-full -left-[0.3%] top-10 hidden duration-500 transition-opacity group-hover:md:block hover:md:block ">
-                  <div className="py-3">
-                    <div
-                      className="w-4 h-4 left-[35%] absolute 
-                    mt-1 bg-gray-50  rotate-45"
-                    ></div>
-                  </div>
-                  <div className="bg-gray-50 border-2 shadow-lg rounded-lg p-5 grid grid-cols-6 gap-6">
+                <div className="absolute w-[840px] left-1 top-14 hidden duration-500 transition-opacity group-hover:md:block hover:md:block ">
+                  <div className=" bg-gray-100 shadow-2xl rounded-lg p-5 grid grid-cols-3 gap-20">
                     {link.sublinks.map((mysublinks, i) => (
                       <div key={i}>
-                        <h1 className="text-base text-primary font-semibold">
+                        <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                           {mysublinks.Head}
                         </h1>
+
                         {mysublinks.sublink.map((slink, i) => (
-                          <li
-                            key={i}
-                            className="text-[15px] text-primary hover:text-[#fc8121] hover:translate-x-2 transition duration-300 text-gray-600 my-2.5"
-                          >
-                            <Link
-                              to={slink.link}
-                              className="hover:text-primary"
-                            >
-                              {slink.name}
-                            </Link>
-                          </li>
+                          <ul>
+                            <li key={i} className="  my-2.5">
+                              <Link className="flex" to={slink.link}>
+                                <img src={slink.img} alt="" />
+                                <h1 className="">{slink.name}</h1>
+                                <h3 className="font-semibold">
+                                  {slink.heading}
+                                </h3>
+                              </Link>
+                              <h5>{slink.learn}</h5>
+                              <h2>{slink.additional}</h2>
+                              <h4>{slink.pricing}</h4>
+                              <h4>{slink.downloads}</h4>
+                              <h4>{slink.integrations}</h4>
+                            </li>
+                          </ul>
                         ))}
                       </div>
                     ))}
