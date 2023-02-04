@@ -14,18 +14,19 @@ export const Links = [
     sublinks: [
       {
         Head: ["ELASTIC CLOUD"],
-        sublink: [{ 
-          name: "Maximize value and optimize your experience", 
-          des: "Deploy everything Elastic has to offer across any cloud, in minutes.",
-          learn: "Learn more",
-          additional: "ADDITIONAL RESOURCES",
-          pricing: "View pricing",
-          downloads: "Free trial and downloads",
-          integrations: "View all integrations",
-          link: "/seoServices" 
-        }],
+        sublink: [
+          {
+            name: "Maximize value and optimize your experience",
+            des: "Deploy everything Elastic has to offer across any cloud, in minutes.",
+            learn: "Learn more",
+            additional: "ADDITIONAL RESOURCES",
+            pricing: "View pricing",
+            downloads: "Free trial and downloads",
+            integrations: "View all integrations",
+            link: "/maximize",
+          },
+        ],
       },
-
 
       {
         Head: "USE ELASTIC FOR",
@@ -62,7 +63,6 @@ export const Links = [
           },
         ],
       },
-
 
       {
         Head: "WHAT'S NEW",
