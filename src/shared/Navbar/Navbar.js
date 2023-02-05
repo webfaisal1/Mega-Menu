@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className=" bg-[#fff]  w-full h-[80px] relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
+      <nav className=" bg-[#fff]  w-full h-[75px] relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
         <div className=" container flex justify-between items-center relative  ">
           <div className="z-50 md:w-auto w-full flex justify-between items-center cursor-pointer">
             <Link className="w-[104px] h-[36px]" to="/">
@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="md:flex hidden  items-center justify-center space-x- relative right-[80px] ">
+          <div className="md:flex hidden  items-center justify-center relative right-[110px] ">
             <Platform />
 
             <UseCases />
@@ -63,34 +63,24 @@ const Navbar = () => {
           </div>
           {/* Mobile nav */}
           <div
-            className={`md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 
+            className={`md:hidden fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 
         duration-500 ${open ? "left-0" : "right-[-100%] "} `}
           >
+            <Platform className="px-4" setOpen={setOpen} open={open} />
+
+            <UseCases className="px-4" setOpen={setOpen} open={open} />
+
             <ul className="pr-4" onClick={() => setOpen(false)}>
               <Link to="/">
-                <li className="text-[20px] my-2 p-3 bg-[#022f6a1b] font-medium text-primary cursor-pointer">
-                  Home
+                <li className="text-[14px] md:text-[16px] my-2 p-3 font-medium text-primary cursor-pointer">
+                  Pricing
                 </li>
               </Link>
             </ul>
             <Platform className="px-4" setOpen={setOpen} open={open} />
-            <ul className="pr-4" onClick={() => setOpen(false)}>
-              <Link to="/blog">
-                <li className="text-[20px] my-2 p-3 bg-[#022f6a1b] font-medium text-primary cursor-pointer">
-                  Blog
-                </li>
-              </Link>
-              <Link to="/portfolio">
-                <li className="text-[20px] my-2 p-3 bg-[#022f6a1b] font-medium text-primary cursor-pointer">
-                  Portfolio
-                </li>
-              </Link>
-              <Link to="/contact">
-                <li className="text-[20px] my-2 p-3 bg-[#022f6a1b] font-medium text-primary cursor-pointer">
-                  Contact Us{" "}
-                </li>
-              </Link>
-            </ul>
+            <Customers className="px-4" setOpen={setOpen} open={open} />
+            <Resources className="px-4" setOpen={setOpen} open={open} />
+            <Company className="px-4" setOpen={setOpen} open={open} />
           </div>
         </div>
       </nav>

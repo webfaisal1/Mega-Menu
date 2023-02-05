@@ -29,7 +29,7 @@ const Resources = (open, setOpen) => {
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-sm md:mt-[7px] md:ml-[2px]  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -37,12 +37,12 @@ const Resources = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[800px] left-64 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[800px] left-64 top-14 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
-                    {/* Elastic Cloud */}
+                    {/* LEARN */}
                     <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        ELASTIC CLOUD
+                        LEARN
                       </h1>
 
                       {ResourcesData[0].sublinks[0].sublink.map((slink, i) => (
@@ -65,10 +65,10 @@ const Resources = (open, setOpen) => {
                         </ul>
                       ))}
                     </div>
-                    {/* USE ELASTIC FOR */}
+                    {/* ENGAGE */}
                     <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        USE ELASTIC FOR
+                        ENGAGE
                       </h1>
                       {ResourcesData[0].sublinks[1].sublink.map((slink, i) => (
                         <ul>
@@ -90,10 +90,10 @@ const Resources = (open, setOpen) => {
                         </ul>
                       ))}
                     </div>
-                    {/*  WHAT'S NEW */}
+                    {/*  FEATURED */}
                     <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        WHAT'S NEW
+                        FEATURED
                       </h1>
                       {ResourcesData[0].sublinks[2].sublink.map((slink, i) => (
                         <ul>

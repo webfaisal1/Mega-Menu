@@ -30,7 +30,7 @@ const UseCases = (open, setOpen) => {
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-sm md:mt-[7px] md:ml-[2px]  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -38,10 +38,10 @@ const UseCases = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[870px] left-18 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[870px] left-18 top-14 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* Elastic Cloud */}
-                    <div>
+                    <div className="p-5">
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         By Topic
                       </h1>
@@ -59,12 +59,12 @@ const UseCases = (open, setOpen) => {
                           </li>
                         </ul>
                       ))}
-                      <h1 className=" hover:underline pl-[16px] text-[#343741] text-[14px] font-semibold ">
+                      <h1 className=" hover:underline pl-[16px] text-[#3437419f] text-[16px] font-semibold ">
                         View All Topic
                       </h1>
                     </div>
                     {/* USE ELASTIC FOR */}
-                    <div>
+                    <div className="p-5">
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         By Industry
                       </h1>
@@ -82,20 +82,28 @@ const UseCases = (open, setOpen) => {
                           </li>
                         </ul>
                       ))}
-                      <h1 className=" hover:underline text-[#343741] pl-[16px] text-[14px] font-semibold">
+                      <h1 className=" hover:underline text-[#3437419f] pl-[16px] text-[16px] font-semibold">
                         View All Industries
                       </h1>
                     </div>
                     {/*  Feature */}
-                    <div className="bg-[#6b6f7f0e]">
+
+                    <div className="bg-[#6b6f7f0e] h-full w-full p-5 ">
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         Feature
                       </h1>
 
                       <ul>
-                        <li className="  my-1">
-                          <div className=" ">
-                            <img className="rounded-lg " src={feature} alt="" />
+                        <li className="my-1">
+                          <div>
+                            <div className=" border border-[#E6EBF2]">
+                              <img
+                                className="rounded-lg w-[235px] h-[137px] hover:scale-110 duration-500  "
+                                src={feature}
+                                alt=""
+                              />
+                            </div>
+
                             <h1 className="text-[18px] pb-[16px] font-bold ">
                               Leveraging Oberbavality
                             </h1>

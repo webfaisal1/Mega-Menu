@@ -31,7 +31,7 @@ const Company = (open, setOpen) => {
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-sm md:mt-[7px] md:ml-[2px]  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -39,7 +39,7 @@ const Company = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[800px] left-72 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[800px] left-72 top-14 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* About Elastic*/}
                     <div>
@@ -90,7 +90,7 @@ const Company = (open, setOpen) => {
                       ))}
                     </div>
                     {/*  Feature */}
-                    <div className="bg-[#6b6f7f0e]">
+                    <div className="bg-[#6b6f7f0e] h-full w-full p-5  ">
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         Feature
                       </h1>
@@ -98,7 +98,11 @@ const Company = (open, setOpen) => {
                       <ul>
                         <li className="  my-1">
                           <div className=" ">
-                            <img className="rounded-lg" src={feature} alt="" />
+                            <img
+                              className="rounded-lg w-[235px] h-[137px] hover:scale-110 duration-500 "
+                              src={feature}
+                              alt=""
+                            />
                             <h1 className="text-[18px] py-[16px] font-bold ">
                               Leveraging Oberbavality
                             </h1>

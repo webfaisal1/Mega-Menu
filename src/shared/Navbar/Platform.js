@@ -2,6 +2,9 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { Links } from "./Links";
 import cloud from '../../assets/images/logo-cloud-32-color (2).svg'
+import pricing from '../../assets/images/icon-price-16-blue.svg'
+import download from '../../assets/images/icon-download-16-blue.svg'
+import integration from '../../assets/images/icon-integration-16-blue.svg'
 
 const Platform = (open, setOpen) => {
   const [heading, setHeading] = useState("");
@@ -33,7 +36,7 @@ const Platform = (open, setOpen) => {
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-sm md:mt-[7px] md:ml-[2px]  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -41,7 +44,7 @@ const Platform = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[900px] left-1 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[900px] left-1 top-14 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* Elastic Cloud */}
                     <div>
@@ -66,23 +69,51 @@ const Platform = (open, setOpen) => {
                               {slink.des}
                             </h3>
 
-                            <h5 className="text-[#07c] text-[14px] pt-[16px] pb-[8px] font-semibold hover:underline  ">
-                              {slink.learn}{" "}
-                            </h5>
+                            <div className="flex items-center">
+                              <div>
+                                <h5 className="text-[#07c] text-[14px] pt-[16px] pb-[8px] font-semibold hover:underline  ">
+                                  {slink.learn}
+                                </h5>
+                              </div>
+                            </div>
                             <div className="w-full h-[1px] bg-[#34374134] "></div>
 
                             <h2 className="text-[#6B6F7F] text-[14px] font-bold py-[16px] ">
                               {slink.additional}
                             </h2>
-                            <h4 className="text-[14px]  font-semibold text-[#07c] hover:underline pb-[8px] ">
-                              {slink.pricing}
-                            </h4>
-                            <h4 className="text-[14px] font-semibold pb-[8px] text-[#07c] hover:underline">
-                              {slink.downloads}
-                            </h4>
-                            <h4 className="text-[14px] font-semibold pb-[8px] text-[#07c] hover:underline">
-                              {slink.integrations}
-                            </h4>
+                            <div className="flex items-center space-x-2">
+                              <div>
+                                <img src={pricing} alt="" />
+                              </div>
+                              <div>
+                                <h4 className="text-[14px]  font-semibold text-[#07c] hover:underline  ">
+                                  {slink.pricing}
+                                </h4>
+                              </div>
+                            </div>
+                            <div className="flex items-center space-x-2 py-[8px] ">
+                              <div>
+                                {" "}
+                                <img src={download} alt="" />
+                              </div>
+                              <div>
+                                {" "}
+                                <h4 className="text-[14px] font-semibold  text-[#07c] hover:underline">
+                                  {slink.downloads}
+                                </h4>
+                              </div>
+                            </div>
+                            <div className="flex items-center space-x-2 ">
+                              <div>
+                                <img src={integration} alt="" />
+                              </div>
+                              <div>
+                                {" "}
+                                <h4 className="text-[14px] font-semibold  text-[#07c] hover:underline">
+                                  {slink.integrations}
+                                </h4>
+                              </div>
+                            </div>
                           </li>
                         </ul>
                       ))}
@@ -148,7 +179,7 @@ const Platform = (open, setOpen) => {
                       ))}
                     </div>
                   </div>
-                  <h1 className="text-center underline text-[#343741] text-[14px] font-semibold ">
+                  <h1 className="text-center hover:underline text-[#3437419f] text-[16px] font-semibold ">
                     View Platform overview
                   </h1>
                 </div>
