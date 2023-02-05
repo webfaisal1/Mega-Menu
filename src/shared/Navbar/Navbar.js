@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 import logo from "../../assets/images/elastic-logo.svg";
+import UseCases from "./UseCases";
+import Customers from "./Customers";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -10,11 +12,8 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav className=" bg-[#fff]  w-full h-[80px] relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
-
         <div className=" container flex justify-between items-center relative  ">
-
           <div className="z-50 md:w-auto w-full flex justify-between items-center cursor-pointer">
-            
             <Link className="w-[104px] h-[36px]" to="/">
               <img src={logo} alt="logo" />
             </Link>
@@ -26,34 +25,23 @@ const Navbar = () => {
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
             </div>
           </div>
-          <div className="md:flex hidden  items-center gap-8 relative right-44 ">
+
+          <div className="md:flex hidden  items-center space-x- relative right-[140px] ">
             <NavLinks />
-            <ul className="inline-flex  space-x-5">
+
+            <UseCases />
+            <ul>
+              <li>Pricing</li>{" "}
+            </ul>
+            <Customers />
+
+            {/* <ul className="inline-flex  space-x-5">
               <Link to="/">
                 <li className="text-[14px] text-[#222222]   font-medium text-primary cursor-pointer">
                   Home
                 </li>
               </Link>
-            </ul>
-            <ul className="inline-flex space-x-5">
-              <Link to="/portfolio">
-                <li className="text-[14px] text-[#222222]   font-medium text-primary cursor-pointer">
-                  Portfolio
-                </li>
-              </Link>
-              <Link to="/blog">
-                <li className="text-[14px] text-[#222222]   font-medium text-primary cursor-pointer">
-                  Blog
-                </li>
-              </Link>
-            </ul>
-            <ul className="inline-flex">
-              <Link to="/contact">
-                <li className="text-[14px] text-[#222222]  font-medium text-primary cursor-pointer">
-                  Contact Us
-                </li>
-              </Link>
-            </ul>
+            </ul> */}
           </div>
           <div className="md:block hidden">
             <div className="flex items-center  gap-x-3 ">

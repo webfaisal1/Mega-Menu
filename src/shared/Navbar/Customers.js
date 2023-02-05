@@ -1,17 +1,14 @@
-import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
-import { Links } from "./Links";
-import cloud from '../../assets/images/logo-cloud-32-color (2).svg'
+import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CustomersData } from './Links';
 
-const NavLinks = (open, setOpen) => {
+const Customers = (open, setOpen) => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
-
-  // console.log(Links[0].sublinks[0].sublink);
-
   return (
     <Fragment>
-      {Links.map((link, i) => (
+      {" "}
+      {CustomersData.map((link, i) => (
         <div key={i}>
           <div className="pr-4 md:pr-1 lg:pr-0 text-left md:cursor-pointer group">
             <h1
@@ -41,65 +38,72 @@ const NavLinks = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[900px] left-1 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[850px] left-56 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* Elastic Cloud */}
                     <div>
-                      <div className="flex items-center ">
-                        <img
-                          className="mr-[16px] w-[30px] h-[30px] "
-                          src={cloud}
-                          alt=""
-                        />
-                        <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                          ELASTIC CLOUD
-                        </h1>
-                      </div>
-                      {Links[0].sublinks[0].sublink.map((slink, i) => (
+                      <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
+                        ELASTIC CLOUD
+                      </h1>
+
+                      {CustomersData[0].sublinks[0].sublink.map((slink, i) => (
                         <ul>
-                          <li key={i} className="my-2.5">
-                            <h1 className="text-[24px] font-bold pb-[16px] leading-[28px]">
-                              {slink.heading}
-                            </h1>
+                          <li key={i} className="  my-1">
+                            <Link to={slink.link}>
+                              <div className="hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
+                                <h2 className="text-[16px] font-semibold mb-[4px] leading- [24px]">
+                                  {" "}
+                                  {slink.heading}{" "}
+                                </h2>
 
-                            <h3 className="leading-[28px] text-[14px] text-[#343741]">
-                              {slink.des}
-                            </h3>
-
-                            <h5 className="text-[#07c] text-[14px] pt-[16px] pb-[8px] font-semibold hover:underline  ">
-                              {slink.learn}{" "}
-                            </h5>
-                            <div className="w-full h-[1px] bg-[#34374134] " ></div>
-                            
-                            <h2 className="text-[#6B6F7F] text-[14px] font-bold py-[16px] ">
-                              {slink.additional}
-                            </h2>
-                            <h4 className="text-[14px]  font-semibold text-[#07c] hover:underline pb-[8px] ">
-                              {slink.pricing}
-                            </h4>
-                            <h4 className="text-[14px] font-semibold pb-[8px] text-[#07c] hover:underline">
-                              {slink.downloads}
-                            </h4>
-                            <h4 className="text-[14px] font-semibold pb-[8px] text-[#07c] hover:underline">
-                              {slink.integrations}
-                            </h4>
+                                <h3 className="font-normal text-[14px] text-[#343741] ">
+                                  {" "}
+                                  {slink.des}{" "}
+                                </h3>
+                              </div>
+                            </Link>
                           </li>
                         </ul>
                       ))}
                     </div>
                     {/* USE ELASTIC FOR */}
-                    <div  >
+                    <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         USE ELASTIC FOR
                       </h1>
-                      {Links[0].sublinks[1].sublink.map((slink, i) => (
+                      {CustomersData[0].sublinks[1].sublink.map((slink, i) => (
+                        <ul>
+                          <li key={i} className="  my-1">
+                            <Link to={slink.link}>
+                              <div className="hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
+                                <h2 className="text-[16px] font-semibold mb-[4px] leading- [24px]">
+                                  {" "}
+                                  {slink.heading}{" "}
+                                </h2>
+
+                                <h3 className="font-normal text-[14px] text-[#343741] ">
+                                  {" "}
+                                  {slink.des}{" "}
+                                </h3>
+                              </div>
+                            </Link>
+                          </li>
+                        </ul>
+                      ))}
+                    </div>
+                    {/*  WHAT'S NEW */}
+                    <div>
+                      <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
+                        WHAT'S NEW
+                      </h1>
+                      {CustomersData[0].sublinks[2].sublink.map((slink, i) => (
                         <ul>
                           <li key={i} className="  my-1">
                             <Link to={slink.link}>
                               <div className="flex hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
                                 <div className="flex items-center mr-[16px]">
                                   <img
-                                    className="w-[30px] h-[30px]"
+                                    className="w-[40px] h-[40px]"
                                     src={slink.img}
                                     alt=""
                                   />
@@ -122,38 +126,10 @@ const NavLinks = (open, setOpen) => {
                         </ul>
                       ))}
                     </div>
-                    {/*  WHAT'S NEW */}
-                    <div>
-                      <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        WHAT'S NEW
-                      </h1>
-                      {Links[0].sublinks[2].sublink.map((slink, i) => (
-                        <ul>
-                          <li key={i} className="  my-1">
-                            <Link to={slink.link}>
-                              <div className="hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
-                                <h2 className="text-[16px] font-semibold mb-[4px] leading- [24px]">
-                                  {" "}
-                                  {slink.heading}{" "}
-                                </h2>
-
-                                <h3 className="font-normal text-[14px] text-[#343741] ">
-                                  {" "}
-                                  {slink.des}{" "}
-                                </h3>
-                              </div>
-                            </Link>
-                          </li>
-                        </ul>
-                      ))}
-                    </div>
-
-               
-
                   </div>
-                  <h1 className="text-center underline text-[#343741] text-[14px] font-semibold ">
-                    View Platform overview
-                  </h1>
+                  <h5 className="text-[#07c] text-[14px] pt-[16px] text-end mr-28 font-semibold hover:underline  ">
+                    View all case studies
+                  </h5>
                 </div>
               </div>
             )}
@@ -213,4 +189,4 @@ const NavLinks = (open, setOpen) => {
   );
 };
 
-export default NavLinks;
+export default Customers;

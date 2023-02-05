@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-blog-pencil-32-color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-blog-pencil-32-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M28,11.1221 L28,28.0001 C28,28.5518153 27.5517153,29.0001 27,29.0001 L3,29.0001 C2.44828475,29.0001 2,28.5518153 2,28.0001 L2,4.0001 C2,3.44780738 2.44786203,3.0001 3,3.0001 L27,3.0001 C27.552138,3.0001 28,3.44780738 28,4.0001 L28,5.4721 L30,5.4721 L30,4.0001 C30,2.34308323 28.6565529,1.0001 27,1.0001 L3,1.0001 C1.34344712,1.0001 0,2.34308323 0,4.0001 L0,28.0001 C0,29.6563847 1.34371525,31.0001 3,31.0001 L27,31.0001 C28.6562847,31.0001 30,29.6563847 30,28.0001 L30,11.1221 L28,11.1221 Z" id="Stroke-1" fill="#535966" fill-rule="nonzero"></path>
+        <polygon id="Stroke-3" fill="#535966" fill-rule="nonzero" points="5 16 17 16 17 14 5 14"></polygon>
+        <polygon id="Stroke-5" fill="#535966" fill-rule="nonzero" points="5 21 11 21 11 19 5 19"></polygon>
+        <polygon id="Stroke-7" fill="#535966" fill-rule="nonzero" points="5 26 25 26 25 24 5 24"></polygon>
+        <polygon id="Stroke-9" fill="#00BFB3" fill-rule="nonzero" points="5 8 9 8 9 6 5 6"></polygon>
+        <polygon id="Stroke-11" fill="#00BFB3" fill-rule="nonzero" points="12 8 16 8 16 6 12 6"></polygon>
+        <path d="M20.4142136,21 L15,21 L15,15.5857864 L25.2928932,5.29289322 C26.7874175,3.79836893 29.2125825,3.79836893 30.7071068,5.29289322 C32.2016311,6.78741751 32.2016311,9.21258249 30.7071068,10.7071068 L20.4142136,21 Z M19.5857864,19 L29.2928932,9.29289322 C30.0063689,8.57941751 30.0063689,7.42058249 29.2928932,6.70710678 C28.5794175,5.99363107 27.4205825,5.99363107 26.7071068,6.70710678 L17,16.4142136 L17,19 L19.5857864,19 Z" id="Stroke-13" fill="#00BFB3" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-certificate-award-32-color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-certificate-award-32-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#535966" fill-rule="nonzero" points="2 24 2 2 30 2 30 24 28 24 28 26 32 26 32 0 0 0 0 26 14 26 14 24"></polygon>
+        <polygon id="Path-100" fill="#00BFB3" fill-rule="nonzero" points="26 32.118034 26 21.5 24 21.5 24 28.881966 21 27.381966 18 28.881966 18 21.5 16 21.5 16 32.118034 21 29.618034"></polygon>
+        <path d="M21,24 C24.5898509,24 27.5,21.0898509 27.5,17.5 C27.5,13.9101491 24.5898509,11 21,11 C17.4101491,11 14.5,13.9101491 14.5,17.5 C14.5,21.0898509 17.4101491,24 21,24 Z M21,22 C18.5147186,22 16.5,19.9852814 16.5,17.5 C16.5,15.0147186 18.5147186,13 21,13 C23.4852814,13 25.5,15.0147186 25.5,17.5 C25.5,19.9852814 23.4852814,22 21,22 Z" id="Oval" fill="#00BFB3" fill-rule="nonzero"></path>
+        <polygon id="Path-101" fill="#535966" fill-rule="nonzero" points="6 8 20 8 20 6 6 6"></polygon>
+        <polygon id="Path-101" fill="#535966" fill-rule="nonzero" points="6 14 13 14 13 12 6 12"></polygon>
+    </g>
+</svg>
