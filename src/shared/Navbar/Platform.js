@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Links } from "./Links";
 import cloud from '../../assets/images/logo-cloud-32-color (2).svg'
 
-const NavLinks = (open, setOpen) => {
+const Platform = (open, setOpen) => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
 
@@ -15,7 +15,7 @@ const NavLinks = (open, setOpen) => {
         <div key={i}>
           <div className="pr-4 md:pr-1 lg:pr-0 text-left md:cursor-pointer group">
             <h1
-              className={` flex justify-start  space-x-2 items-center  group ${
+              className={` flex justify-start items-center  group ${
                 open ? "text-[#222222] text-[14px] my-3 p-3" : "text-[#222222]"
               }`}
               onClick={() => {
@@ -69,8 +69,8 @@ const NavLinks = (open, setOpen) => {
                             <h5 className="text-[#07c] text-[14px] pt-[16px] pb-[8px] font-semibold hover:underline  ">
                               {slink.learn}{" "}
                             </h5>
-                            <div className="w-full h-[1px] bg-[#34374134] " ></div>
-                            
+                            <div className="w-full h-[1px] bg-[#34374134] "></div>
+
                             <h2 className="text-[#6B6F7F] text-[14px] font-bold py-[16px] ">
                               {slink.additional}
                             </h2>
@@ -88,7 +88,7 @@ const NavLinks = (open, setOpen) => {
                       ))}
                     </div>
                     {/* USE ELASTIC FOR */}
-                    <div  >
+                    <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
                         USE ELASTIC FOR
                       </h1>
@@ -147,9 +147,6 @@ const NavLinks = (open, setOpen) => {
                         </ul>
                       ))}
                     </div>
-
-               
-
                   </div>
                   <h1 className="text-center underline text-[#343741] text-[14px] font-semibold ">
                     View Platform overview
@@ -213,4 +210,4 @@ const NavLinks = (open, setOpen) => {
   );
 };
 
-export default NavLinks;
+export default Platform;

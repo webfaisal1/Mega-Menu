@@ -1,9 +1,11 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import NavLinks from "./NavLinks";
+import Platform from "./Platform";
 import logo from "../../assets/images/elastic-logo.svg";
 import UseCases from "./UseCases";
 import Customers from "./Customers";
+import Resources from "./Resources";
+import Company from "./Company";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -26,22 +28,18 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="md:flex hidden  items-center space-x- relative right-[140px] ">
-            <NavLinks />
+          <div className="md:flex hidden  items-center justify-center space-x- relative right-[80px] ">
+            <Platform />
 
             <UseCases />
             <ul>
-              <li>Pricing</li>{" "}
+              <li className="text-[#222222] text-[14px] px-2 font-semibold ">
+                Pricing
+              </li>{" "}
             </ul>
             <Customers />
-
-            {/* <ul className="inline-flex  space-x-5">
-              <Link to="/">
-                <li className="text-[14px] text-[#222222]   font-medium text-primary cursor-pointer">
-                  Home
-                </li>
-              </Link>
-            </ul> */}
+            <Resources />
+            <Company />
           </div>
           <div className="md:block hidden">
             <div className="flex items-center  gap-x-3 ">
@@ -75,7 +73,7 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <NavLinks className="px-4" setOpen={setOpen} open={open} />
+            <Platform className="px-4" setOpen={setOpen} open={open} />
             <ul className="pr-4" onClick={() => setOpen(false)}>
               <Link to="/blog">
                 <li className="text-[20px] my-2 p-3 bg-[#022f6a1b] font-medium text-primary cursor-pointer">

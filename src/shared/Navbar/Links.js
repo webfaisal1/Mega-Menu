@@ -252,7 +252,7 @@ export const CustomersData = [
 // Resources Data
 export const ResourcesData = [
   {
-    name: "Customers",
+    name: "Resources",
     submenu: true,
     sublinks: [
       {
@@ -313,6 +313,57 @@ export const ResourcesData = [
             img: award,
             heading: "Observability Engineer training",
             link: "/digitalMarketingService",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+// Company Data
+export const CompanyData = [
+  {
+    name: "Company",
+    submenu: true,
+    sublinks: [
+      // By Topic
+      {
+        sublink: [
+          {
+            heading: "About",
+            des: "Our story and leadership",
+            link: "/maximize",
+          },
+          {
+            heading: "Careers",
+            des: "Peruse our opportunities",
+            link: "/maximize",
+          },
+          {
+            heading: "Press",
+            des: "Elastic news",
+            link: "/maximize",
+          },
+        ],
+      },
+
+      // By Industry
+      {
+        sublink: [
+          {
+            heading: "Partners",
+            des: "Product Find or become a partner",
+            link: "/maximize",
+          },
+          {
+            heading: "Investor Relations",
+            des: "Results, filings, resources",
+            link: "/maximize",
+          },
+          {
+            heading: "Elastic Excellence Awards",
+            des: "See remarkable work",
+            link: "/maximize",
           },
         ],
       },

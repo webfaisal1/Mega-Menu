@@ -12,7 +12,7 @@ const Customers = (open, setOpen) => {
         <div key={i}>
           <div className="pr-4 md:pr-1 lg:pr-0 text-left md:cursor-pointer group">
             <h1
-              className={` flex justify-start  space-x-2 items-center  group ${
+              className={` flex justify-start  items-center  group ${
                 open ? "text-[#222222] text-[14px] my-3 p-3" : "text-[#222222]"
               }`}
               onClick={() => {
@@ -38,7 +38,7 @@ const Customers = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[850px] left-56 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[750px] left-64 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* Elastic Cloud */}
                     <div>

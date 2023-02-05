@@ -1,14 +1,13 @@
-import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
-import { useCaseData } from "./Links";
-import feature from '../../assets/images/customer-experience-gic-608x369.png'
+import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ResourcesData } from './Links';
 
-const UseCases = (open, setOpen) => {
+const Resources = (open, setOpen) => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
   return (
     <Fragment>
-      {useCaseData.map((link, i) => (
+      {ResourcesData.map((link, i) => (
         <div key={i}>
           <div className="pr-4 md:pr-1 lg:pr-0 text-left md:cursor-pointer group">
             <h1
@@ -38,79 +37,98 @@ const UseCases = (open, setOpen) => {
             {/* Hover Content */}
             {link.submenu && (
               <div>
-                <div className="absolute w-[870px] left-18 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
+                <div className="absolute w-[800px] left-64 top-16 hidden duration-500 transition-opacity group-hover:md:block hover:md:block bg-white shadow-2xl rounded-lg p-5 ">
                   <div className="  grid grid-cols-3 gap-2">
                     {/* Elastic Cloud */}
                     <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        By Topic
+                        ELASTIC CLOUD
                       </h1>
 
-                      {useCaseData[0]?.sublinks[0]?.sublink?.map((slink, i) => (
+                      {ResourcesData[0].sublinks[0].sublink.map((slink, i) => (
                         <ul>
-                          <li key={i} className="my-1">
+                          <li key={i} className="  my-1">
                             <Link to={slink.link}>
-                              <div className=" hover:bg-[#e8f6fe] py-[8px] px-[16px] hover:text-[#0077CC] ">
-                                <h1 className="text-[16px] font-bold mb-[4px] leading-[22px]">
-                                  {slink.heading}
-                                </h1>
+                              <div className="hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
+                                <h2 className="text-[16px] font-semibold mb-[4px] leading- [24px]">
+                                  {" "}
+                                  {slink.heading}{" "}
+                                </h2>
+
+                                <h3 className="font-normal text-[14px] text-[#343741] ">
+                                  {" "}
+                                  {slink.des}{" "}
+                                </h3>
                               </div>
                             </Link>
                           </li>
                         </ul>
                       ))}
-                      <h1 className=" hover:underline pl-[16px] text-[#343741] text-[14px] font-semibold ">
-                        View All Topic
-                      </h1>
                     </div>
                     {/* USE ELASTIC FOR */}
                     <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        By Industry
+                        USE ELASTIC FOR
                       </h1>
-                      {useCaseData[0]?.sublinks[1]?.sublink?.map((slink, i) => (
+                      {ResourcesData[0].sublinks[1].sublink.map((slink, i) => (
                         <ul>
                           <li key={i} className="  my-1">
                             <Link to={slink.link}>
-                              <div className=" hover:bg-[#e8f6fe] py-[8px] px-[16px] hover:text-[#0077CC] ">
-                                <h2 className="text-[16px] font-bold mb-[4px] leading-[22px] ">
+                              <div className="hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
+                                <h2 className="text-[16px] font-semibold mb-[4px] leading- [24px]">
                                   {" "}
                                   {slink.heading}{" "}
                                 </h2>
+
+                                <h3 className="font-normal text-[14px] text-[#343741] ">
+                                  {" "}
+                                  {slink.des}{" "}
+                                </h3>
                               </div>
                             </Link>
                           </li>
                         </ul>
                       ))}
-                      <h1 className=" hover:underline text-[#343741] pl-[16px] text-[14px] font-semibold">
-                        View All Industries
-                      </h1>
                     </div>
-                    {/*  Feature */}
-                    <div className="bg-[#6b6f7f0e]">
+                    {/*  WHAT'S NEW */}
+                    <div>
                       <h1 className="text-[#6B6F7F] pb-[8px] text-[14px] font-bold">
-                        Feature
+                        WHAT'S NEW
                       </h1>
+                      {ResourcesData[0].sublinks[2].sublink.map((slink, i) => (
+                        <ul>
+                          <li key={i} className="  my-1">
+                            <Link to={slink.link}>
+                              <div className="flex hover:bg-[#e8f6fe] p-[14px] hover:text-[#0077CC] ">
+                                <div className="flex items-center mr-[16px]">
+                                  <img
+                                    className="w-[40px] h-[40px]"
+                                    src={slink.img}
+                                    alt=""
+                                  />
+                                </div>
 
-                      <ul>
-                        <li className="  my-1">
-                          <div className=" ">
-                            <img className="rounded-lg " src={feature} alt="" />
-                            <h1 className="text-[18px] pb-[16px] font-bold ">
-                              Leveraging Oberbavality
-                            </h1>
-                            <p className="text-[16px] text-[#343741] ">
-                              Why observability matters and how to evaluate
-                              observability solutions
-                            </p>
-                            <h5 className="text-[#07c] text-[14px] pt-[16px] pb-[8px] font-semibold hover:underline  ">
-                              Download ebook
-                            </h5>
-                          </div>
-                        </li>
-                      </ul>
+                                <div>
+                                  <h2 className="text-[16px] font-bold  leading-[24px]">
+                                    {" "}
+                                    {slink.heading}{" "}
+                                  </h2>
+
+                                  <h3 className="font-normal text-[14px] text-[#343741] ">
+                                    {" "}
+                                    {slink.des}{" "}
+                                  </h3>
+                                </div>
+                              </div>
+                            </Link>
+                          </li>
+                        </ul>
+                      ))}
                     </div>
                   </div>
+                  <h5 className="text-[#07c] text-[14px] pt-[16px] text-end mr-28 font-semibold hover:underline  ">
+                    View all case Resources
+                  </h5>
                 </div>
               </div>
             )}
@@ -170,4 +188,4 @@ const UseCases = (open, setOpen) => {
   );
 };
 
-export default UseCases;
+export default Resources;
