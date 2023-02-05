@@ -4,14 +4,10 @@ import Navbar from "./shared/Navbar/Navbar";
 
 function App() {
   return (
+    <Fragment>
+      <Navbar />
 
-    <Fragment >
-
-              <Navbar/>
-              
-
-              
-   
+      {/* Demo Project Link: https://www.elastic.co/ */}
     </Fragment>
   );
 }
