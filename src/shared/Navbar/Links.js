@@ -13,10 +13,10 @@ export const Links = [
     submenu: true,
     sublinks: [
       {
-        Head: ["ELASTIC CLOUD"],
+        // Head: ["ELASTIC CLOUD"],
         sublink: [
           {
-            name: "Maximize value and optimize your experience",
+            heading: "Maximize value and optimize your experience",
             des: "Deploy everything Elastic has to offer across any cloud, in minutes.",
             learn: "Learn more",
             additional: "ADDITIONAL RESOURCES",
@@ -29,35 +29,35 @@ export const Links = [
       },
 
       {
-        Head: "USE ELASTIC FOR",
+        // Head: "USE ELASTIC FOR",
         sublink: [
           {
             img: enterprise,
-            heading: "Digital Marketing Service",
+            heading: "Enterprise Search",
             des: "Search and discovery experiences",
             link: "/digitalMarketingService",
           },
           {
             img: observability,
-            heading: "Digital Marketing Service",
+            heading: "Observability",
             des: "Unified logs, metrics, and traces",
             link: "/digitalMarketingService",
           },
           {
             img: security,
-            heading: "Digital Marketing Service",
+            heading: "Security",
             des: "SIEM, endpoint, cloud XDR",
             link: "/digitalMarketingService",
           },
           {
             img: elastic,
-            heading: "Digital Marketing Service",
+            heading: "Elastic Cloud",
             des: "Deploy and scale in any cloud",
             link: "/digitalMarketingService",
           },
           {
             img: stack,
-            heading: "Digital Marketing Service",
+            heading: "Elastic (ELK) Stack",
             des: "Elasticsearch, Kibana, and integrations",
             link: "/digitalMarketingService",
           },
@@ -65,7 +65,7 @@ export const Links = [
       },
 
       {
-        Head: "WHAT'S NEW",
+        // Head: "WHAT'S NEW",
         sublink: [
           {
             heading: "Elastic 8.6 released",

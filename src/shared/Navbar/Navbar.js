@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className=" bg-white  w-full relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
+      <nav className=" bg-[#fff]  w-full h-[80px] relative top-0 bottom-0 right-0 left-0 z-[10] block border-b border-[#e6ebf2]">
 
         <div className=" container flex justify-between items-center relative  ">
 
